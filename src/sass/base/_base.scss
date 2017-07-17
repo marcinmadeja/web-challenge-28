@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+
+  @include for-size(tablet-landscape-down) {
+    font-size: 80%;
+  }
+
+  @include for-size(tablet-landscape-down) {
+    font-size: 70%;
+  }
+
+  @include for-size (phone-only) {
+    font-size: 60%;
+  }
+}
+
+body {
+  font-family: $primary-font;
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  @include on-event {
+    color: $brand-color;
+    text-decoration: none;
+  }
+
+  color: $brand-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.fooReveal { visibility: hidden; }
+section { overflow: hidden; }

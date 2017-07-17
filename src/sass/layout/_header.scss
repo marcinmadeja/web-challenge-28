@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.l-header {
+  width: 100%;
+  position: absolute;
+  top: 35px;
+  left: 0;
+
+  z-index: 1;
+
+  &.is_fixed {
+    width: 100%;
+    background: #242424;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1110;
+
+    @include for-size(tablet-landscaoe-down) {
+      height: 43px;
+    }
+  }
+}
+
+.home-header__wrap {
+  background: $home-header-bg;
+
+  position: relative;
+  z-index: 2;
+}
